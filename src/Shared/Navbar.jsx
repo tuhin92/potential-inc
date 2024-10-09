@@ -1,51 +1,122 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "@fontsource/montserrat";
+import "@fontsource/poppins";
 
 const Navbar = () => {
-    const NavLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/foods">About Me</NavLink></li>
-        <li><NavLink to="/about">About Me</NavLink></li>
-        <li><NavLink to="/projects">Projects</NavLink></li>
-        <li><NavLink to="/testimonials">Testimonials</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+  const NavLinks = (
+    <>
+      <li>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "text-[#FD6F00]" : "text-black"
+          }
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? "text-[#FD6F00]" : "text-black"
+          }
+        >
+          About Me
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            isActive ? "text-[#FD6F00]" : "text-black"
+          }
+        >
+          Services
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? "text-[#FD6F00]" : "text-black"
+          }
+        >
+          Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/testimonials"
+          className={({ isActive }) =>
+            isActive ? "text-[#FD6F00]" : "text-black"
+          }
+        >
+          Testimonials
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "text-[#FD6F00]" : "text-black"
+          }
+        >
+          Contact
+        </NavLink>
+      </li>
     </>
-    return (
-        <div className="navbar bg-white max-w-7xl mx-auto">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        {NavLinks}
-                    </ul>
-                </div>
-                <a className="btn btn-ghost text-xl">Mumair</a>
-            </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    {NavLinks}
-                </ul>
-            </div>
-            <div className="navbar-end">
-                <a className="btn">Download CV</a>
-            </div>
+  );
+
+  return (
+    <div className="navbar bg-white max-w-7xl mx-auto py-8 font-poppins">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            {NavLinks}
+          </ul>
         </div>
-    );
+        <div className="flex items-center">
+          <img
+            className="h-8 w-8 md:h-16 md:w-16"
+            src="./Subtract.png"
+            alt=""
+          />
+          <a className="btn btn-ghost hover:bg-transparent text-2xl md:text-5xl mt-4 md:mt-0 font-montserrat text-[#1E1E1E] inline-block font-bold">
+            M<span className="text-[#545454]">umair</span>
+          </a>
+        </div>
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">{NavLinks}</ul>
+      </div>
+      <div className="navbar-end">
+        <a className="btn bg-[#FD6F00] border-none text-[#FFFFFF] text-sm md:text-base font-normal">
+          Download CV
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

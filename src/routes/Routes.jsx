@@ -12,7 +12,7 @@ const routes = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/foods',
+                path: '/about',
             }
         ]
     },
