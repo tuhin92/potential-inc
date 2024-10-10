@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#F8F8F8] font-poppins text-[#000000]">
+    <footer className="w-full bg-[#F8F8F8] font-poppins text-[#000000] -mb-8">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center space-x-2">
