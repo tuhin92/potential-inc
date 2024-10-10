@@ -3,7 +3,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div className="py-12 font-poppins text-[#000000]">
-      <h2 className="text-[#1E1E1E] text-6xl font-semibold text-center">
+      <h2 className="text-[#1E1E1E] text-4xl lg:text-6xl font-semibold text-center">
         My Projects
       </h2>
       <p className="text-center mt-6">

@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
     <div className="text-[#000000] text-center my-6 font-poppins">
-      <h2 className="text-6xl font-semibold">Services</h2>
+      <h2 className="text-4xl lg:text-6xl font-semibold">Services</h2>
       <p className="my-6">
         Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
         lectus <br /> netus in. Aliquet donec morbi convallis pretium

@@ -37,7 +37,7 @@ const About_me = () => {
             </div>
 
           <div className="text-center lg:text-left">
-            <h4 className="text-[#000000] font-semibold text-[20px] md:text-[52px]">
+            <h4 className="text-[#000000] font-semibold text-4xl md:text-6xl py-2">
               About Me
             </h4>
             <p className="py-6 text-base md:text-xl text-[#000000]">
