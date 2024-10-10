@@ -6,11 +6,11 @@ const Together = () => {
       <h2 className="text-4xl md:text-6xl font-semibold text-center mb-4">
         Lets Design Together
       </h2>
-      <p className="text-center mb-8 max-w-2xl mx-auto">
+      <p className="text-center my-6 max-w-2xl mx-auto">
         Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
         lectus netus in. Aliquet donec morbi convallis pretium
       </p>
-      <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+      <div className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mt-12">
         <input
           type="email"
           placeholder="Enter Your Email"
