@@ -7,16 +7,28 @@ import Together from '../../Components/Together';
 import Testimonials from '../../Components/Testimonials';
 
 const Home = () => {
-    return (
-        <div className='max-w-7xl mx-auto'>
-            <Banner></Banner>
-            <About_me></About_me>
-            <Services></Services>
-            <Projects></Projects>
-            <Testimonials></Testimonials>
-            <Together></Together>
-        </div>
-    );
+  return (
+    <div className='max-w-7xl mx-auto'>
+      <div id="home">
+        <Banner />
+      </div>
+      <div id="about">
+        <About_me />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="contact">
+        <Together />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "@fontsource/montserrat";
 import "@fontsource/poppins";
 
@@ -7,64 +6,34 @@ const Navbar = () => {
   const NavLinks = (
     <>
       <li>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? "text-[#FD6F00]" : "text-black"
-          }
-        >
+        <a href="#home" className="text-black hover:text-[#FD6F00]">
           Home
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive ? "text-[#FD6F00]" : "text-black"
-          }
-        >
+        <a href="#about" className="text-black hover:text-[#FD6F00]">
           About Me
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/services"
-          className={({ isActive }) =>
-            isActive ? "text-[#FD6F00]" : "text-black"
-          }
-        >
+        <a href="#services" className="text-black hover:text-[#FD6F00]">
           Services
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive ? "text-[#FD6F00]" : "text-black"
-          }
-        >
+        <a href="#projects" className="text-black hover:text-[#FD6F00]">
           Projects
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/testimonials"
-          className={({ isActive }) =>
-            isActive ? "text-[#FD6F00]" : "text-black"
-          }
-        >
+        <a href="#testimonials" className="text-black hover:text-[#FD6F00]">
           Testimonials
-        </NavLink>
+        </a>
       </li>
       <li>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive ? "text-[#FD6F00]" : "text-black"
-          }
-        >
+        <a href="#contact" className="text-black hover:text-[#FD6F00]">
           Contact
-        </NavLink>
+        </a>
       </li>
     </>
   );
