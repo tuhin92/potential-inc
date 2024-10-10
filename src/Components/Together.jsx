@@ -2,7 +2,7 @@ import React from "react";
 
 const Together = () => {
   return (
-    <div className="text-[#000000] font-poppins max-w-4xl mx-auto px-4 py-16">
+    <div className="text-[#000000] font-poppins max-w-4xl mx-auto px-4 py-6">
       <h2 className="text-4xl md:text-6xl font-semibold text-center mb-4">
         Lets Design Together
       </h2>
